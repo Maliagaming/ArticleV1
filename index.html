@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTU Danao Campus</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        
+        window.onload = function() {
+            const loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn !== 'true') {
+                window.location.href = 'login.html';
+            }
+        };
+    </script>
+    <style>
+       
+        nav {
+    background-color: transparent;  
+    position: fixed; 
+    width: 100%;
+    margin-top: 20px;
+    z-index: 1000; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: 500; 
+    font-size: 18px; 
+    padding: 10px 20px;
+    border: 2px solid #f39c12; 
+    border-radius: 5px;
+    background-color: #2980b9; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12; 
+    color: black;
+    border: 2px solid #2980b9;
+}
+
+        
+        #hero {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+  
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#facilities">Discover</a></li>
+            <li><a href="#contact">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li> 
+        </ul>
+    </nav>
+
+
+    <section id="hero">
+        <div>
+            <h1>Welcome to CTU Danao Campus</h1>
+            <p>Empowering Futures Through Education</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>History and Evolution of Cebu Technological University - Danao Campus</h2>
+        <p>Cebu Technological University (CTU) Danao Campus is a dynamic educational institution located in Danao City, Cebu. As part of the CTU system, the campus offers a diverse range of programs in technology, engineering, education, and hospitality, with a strong focus on hands-on learning and innovation.</p>
+    </section>
+    
+    <section id="facilities">
+        <h2>Empowering Futures: Inside the Vibrant Community of CTU Danao Campus</h2>
+        <p>Cebu Technological University (CTU) Danao Campus is a thriving educational institution located in Danao City, Cebu. As part of the renowned CTU system, the campus offers a diverse array of programs in technology, engineering, education, and hospitality. Known for its emphasis on hands-on learning, innovation, and industry-aligned education, CTU Danao Campus empowers students to excel in their chosen fields. With state-of-the-art facilities, a dedicated faculty, and a strong focus on community development, the campus serves as a catalyst for personal and professional growth, nurturing future leaders and innovators.</p>
+    
+        <div class="gallery">
+            <div class="gallery-item">
+                <h3>Quadrangle</h3>
+                <img src="images/2ctucampus.JPG" alt="Quadrangle">
+                <p>The CTU Danao Campus Quadrangle is a central open space that serves as a versatile hub for various campus activities.</p>
+            </div>
+            <div class="gallery-item">
+                <h3>SAC</h3>
+                <img src="images/7sac.JPG" alt="SAC">
+                <p>The SAC is an indoor hall used for sports, assemblies, and other student events.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Library</h3>
+                <img src="images/lib.jpg" alt="Library">
+                <p>The library supports academic and research needs with a wide collection of books, journals, and digital resources.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Bistro/Canteen</h3>
+                <img src="images/1canteen.JPG" alt="Canteen">
+                <p>The canteen is a vibrant space where students, faculty, and staff can enjoy meals and snacks.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Grandstand</h3>
+                <img src="images/6oval.JPG" alt="Grandstand">
+                <p>The Grandstand is a venue for large-scale events, from university assemblies to graduation ceremonies.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Centrum</h3>
+                <img src="images/3fablab.JPG" alt="FABLAB CTU - DANAO">
+                <p>The Fabrication Laboratory (FABLAB) at CTU Danao Campus is an advanced, open-access workshop equipped with modern tools and technologies designed to support innovation, creativity, and hands-on learning.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Tennis Court</h3>
+                <img src="images/9tennis.JPG" alt="Tennis Court">
+                <p>The tennis court is used for physical education classes, sports training, and recreational activities.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Fitness Gym</h3>
+                <img src="images/4fitness.JPG" alt="Fitness Gym">
+                <p>The Fitness Gym at CTU Danao Campus promotes health and wellness among students, faculty, and staff.</p>
+            </div>
+    
+            <div class="gallery-item">
+                <h3>Gender and Development</h3>
+                <img src="images/5gad.JPG" alt="Gender and Development">
+                <p>The Gender and Development (GAD) Center focuses on promoting gender equality and empowerment in the university community.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: ctudanao@ctu.edu.ph</p>
+        <p>Phone: +63 32 345 6789</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Cebu Technological University - Danao Campus. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
