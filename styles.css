@@ -1,4 +1,6 @@
 body {
+    background-image: url(images/image.jpg);
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
 header {
     background-color: #8b3737;
     color: #a84848;
-    padding: 10px;
+    padding: 13px;
     text-align: center;
     border-bottom: 2px solid #666; 
 }
@@ -70,7 +72,7 @@ section#about {
 
 section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5  em;
+    font-size: 3.5 em;
     color: #333; 
     text-align: center;
     margin-bottom: 50px;
@@ -81,7 +83,6 @@ section p {
     font-size: 20px; 
     color: #424242; 
     line-height: 2
-    text-align: justify;
 }
 
 .gallery {

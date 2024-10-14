@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CTU Danao Campus</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        #about {
+            background: linear-gradient(135deg, #55544c, #2f74a1);
+            padding: 80px 20px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        #about p strong {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            #about h2 {
+                font-size: 2rem;
+            }
+
+            #about p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="about">
+    <h2>History and Evolution of Cebu Technological University - Danao Campus</h2>
+    <p>Cebu Technological University (CTU) Danao Campus is a dynamic educational institution located in Danao City, Cebu. As part of the CTU system, the campus offers a diverse range of programs in technology, engineering, education, and hospitality, with a strong focus on hands-on learning and innovation.</p>
+
+    <p><strong>Early Beginnings</strong></p>
+    <p>CTU Danao Campus traces its origins to a vocational school established to meet the growing educational needs of Danao City and its neighboring municipalities. It played a vital role in providing technical and vocational training to students in the region, contributing to the local workforce and industrial development.</p>
+
+    <p><strong>Transition to a University</strong></p>
+    <p>In 2009, Cebu State College of Science and Technology (CSCST), of which the Danao campus was a part, was converted into Cebu Technological University (CTU) by virtue of Republic Act 9744. This conversion marked the beginning of CTU's journey as a polytechnic university, offering a wide range of academic programs including undergraduate and graduate degrees across its campuses, including Danao.</p>
+
+    <p><strong>Growth and Expansion</strong></p>
+    <p>As a constituent campus of CTU, the Danao Campus expanded its academic offerings, infrastructure, and student services. Over the years, it has introduced degree programs in fields such as Engineering, Education, and Information Technology, catering to the growing demand for higher education in the northern Cebu region.</p>
+
+    <p>The campus continues to contribute to local development through research, extension services, and partnerships with industries. It serves as a hub for academic excellence and innovation, promoting the university's mission to provide quality education to all.</p>
+
+    <p>Today, CTU Danao Campus stands as a vital institution in the region, contributing to the educational, social, and economic progress of its community. This history showcases CTU Danao's commitment to providing quality education and its ongoing efforts to meet the needs of its students and community.</p>
+</section>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const aboutSection = document.querySelector('#about');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.style.opacity = '1';
+                    aboutSection.style.transform = 'translateY(0)';
+                    aboutSection.style.transition = 'all 1s ease';
+                }
+            });
+        });
+
+        aboutSection.style.opacity = '0';
+        aboutSection.style.transform = 'translateY(50px)';
+        observer.observe(aboutSection);
+    });
+</script>
+
+</body>
+</html>

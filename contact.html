@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTU Danao Campus Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #55544c, #2f74a1);
+
+        }
+
+        .contact-container {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            width: 450px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .contact-container h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-container .contact-details {
+            margin-bottom: 20px;
+        }
+
+        .contact-container .contact-details div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-container .contact-details div i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #ffd700;
+        }
+
+        .contact-container .contact-details div span {
+            font-size: 1rem;
+        }
+
+        .icon-location:before {
+            content: '\1F4CD';
+        }
+
+        .icon-phone:before {
+            content: '\260E';
+        }
+
+        .icon-email:before {
+            content: '\2709';
+        }
+
+        .icon-website:before {
+            content: '\1F310';
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        form button:hover {
+            background-color: #ffd700;
+        }
+
+        @media(max-width: 600px) {
+            .contact-container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-details">
+            <div>
+                <i class="icon-location"></i>
+                <span>Sabang, Danao City, Cebu Philippines</span>
+            </div>
+            <div>
+                <i class="icon-phone"></i>
+                <span>032-343-0580</span>
+            </div>
+            <div>
+                <i class="icon-email"></i>
+                <span>ctudanao@gmail.com</span>
+            </div>
+            <div>
+                <i class="icon-website"></i>
+                <span>www.greatctuarticle.com</span>
+            </div>
+        </div>
+        
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
