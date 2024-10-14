@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTU Danao Campus</title>
-    <!-- Link to Google Fonts -->
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <!-- Link to the external CSS file -->
+ 
     <link rel="stylesheet" href="styles.css">
     <script>
-        
         window.onload = function() {
             const loggedIn = localStorage.getItem('loggedIn');
             if (loggedIn !== 'true') {
@@ -20,76 +19,127 @@
         };
     </script>
     <style>
-       
+        header {
+            background-color: #333; 
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
         nav {
-    background-color: transparent;  
-    position: fixed; 
-    width: 100%;
-    margin-top: 20px;
-    z-index: 1000; 
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center;
-}
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
 
-nav ul {
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-}
+        nav ul {
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+        }
 
-nav ul li {
-    margin: 0 15px; 
-}
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
 
-nav ul li a {
-    color: white; 
-    text-decoration: none;
-    font-weight: 500; 
-    font-size: 18px; 
-    padding: 10px 20px;
-    border: 2px solid #f39c12; 
-    border-radius: 5px;
-    background-color: #2980b9; 
-    transition: background-color 0.3s, color 0.3s;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid #f39c12;
+            border-radius: 5px;
+            background-color: #2980b9;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-nav ul li a:hover {
-    background-color: #f39c12; 
-    color: black;
-    border: 2px solid #2980b9;
-}
+        nav ul li a:hover {
+            background-color: #c0a77e;
+            color: black;
+            border: 2px solid #2980b9;
+        }
 
-        
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #2980b9;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #f39c12;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
         #hero {
-            padding-top: 60px;
+            padding-top: 100px; 
         }
     </style>
 </head>
 <body>
-  
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#facilities">Discover</a></li>
-            <li><a href="#contact">Programs</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="login.html">Login</a></li> 
-        </ul>
-    </nav>
-
+    
+    <header>
+        <h1 style="color: white; font-size: 24px; white-space: nowrap;">CEBU TECHNOLOGICAL - DANAO CAMPUS</h1> 
+        <nav>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li>
+                    <a href="#facilities">Discover</a>
+                    <div class="dropdown">
+                        <a href="#event1">Event 1</a>
+                        <a href="#event2">Event 2</a>
+                        <a href="#event3">Event 3</a>
+                    </div>
+                </li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 
     <section id="hero">
-        <div>
-            <h1>Welcome to CTU Danao Campus</h1>
-            <p>Empowering Futures Through Education</p>
-        </div>
+       
     </section>
 
     <section id="about">
         <h2>History and Evolution of Cebu Technological University - Danao Campus</h2>
         <p>Cebu Technological University (CTU) Danao Campus is a dynamic educational institution located in Danao City, Cebu. As part of the CTU system, the campus offers a diverse range of programs in technology, engineering, education, and hospitality, with a strong focus on hands-on learning and innovation.</p>
+        <p>Early Beginnings</p>
+         <p>CTU Danao Campus traces its origins to a vocational school established to meet the growing educational needs of Danao City and its neighboring municipalities. It played a vital role in providing technical and vocational training to students in the region, contributing to the local workforce and industrial development.
+        <p>Transition to a University</p>
+        In 2009, Cebu State College of Science and Technology (CSCST), of which the Danao campus was a part, was converted into Cebu Technological University (CTU) by virtue of Republic Act 9744. This conversion marked the beginning of CTU's journey as a polytechnic university, offering a wide range of academic programs including undergraduate and graduate degrees across its campuses, including Danao.
+            
+        <p>Growth and Expansion</p>
+        As a constituent campus of CTU, the Danao Campus expanded its academic offerings, infrastructure, and student services. Over the years, it has introduced degree programs in fields such as Engineering, Education, and Information Technology, catering to the growing demand for higher education in the northern Cebu region.
+            
+         The campus continues to contribute to local development through research, extension services, and partnerships with industries. It serves as a hub for academic excellence and innovation, promoting the university's mission to provide quality education to all.
+            
+        Today, CTU Danao Campus stands as a vital institution in the region, contributing to the educational, social, and economic progress of its community.
+            
+        This history showcases CTU Danao's commitment to providing quality education and its ongoing efforts to meet the needs of its students and community.</p>
     </section>
     
     <section id="facilities">
